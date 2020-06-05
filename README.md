@@ -1,3 +1,15 @@
-# :computer:Setup Ubuntu
+# :computer: Wake Up Ubuntu
 
-> My setup to install programs to boot an ubuntu machine.
+> My installation file to boot to an ubuntu machine.
+
+<br />
+
+![Logo Ubuntu](https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png)
+
+## Features 
+
+- Git using SSH
+- ZSH
+- VsCode with Extensions
+- Spotify
+- Font Firacode
