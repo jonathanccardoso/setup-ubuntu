@@ -1,6 +1,6 @@
 # :computer: Wake Up Ubuntu
 
-> My installation file to boot to an ubuntu machine.
+> My installation file to boot to an Ubuntu machine.
 
 <br />
 
