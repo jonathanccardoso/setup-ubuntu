@@ -1,8 +1,15 @@
+#!/bin/bash
+
+echo "WAKE UP UBUNTU!!! Please be patient"
+
 echo 'apt-get update'
 sudo apt-get update
 
 echo 'installing git' 
 sudo apt install git -y
+
+echo "installing curl"
+sudo apt install curl -y
 
 echo "What name do you want to use in GIT user.name?"
 echo "My is \"jonathanccardoso\""
@@ -42,9 +49,10 @@ echo 'installing extensions'
 code --install-extension dracula-theme.theme-dracula
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension esbenp.prettier-vscode
+code --install-extension yzhang.markdown-all-in-one
 
 echo 'installing spotify' 
-snap install spotify
+sudo snap install spotify
 
 echo 'installing chromium'
 sudo apt install chromium-browser -y
@@ -53,3 +61,26 @@ echo 'installing theme'
 sudo apt install fonts-firacode -y
 wget -O ~/.oh-my-zsh/themes/node.zsh-theme https://raw.githubusercontent.com/skuridin/oh-my-zsh-node-theme/master/node.zsh-theme
 sed -i 's/.*ZSH_THEME=.*/ZSH_THEME="node"/g' ~/.zshrc
+
+echo "installing Hyper"
+sudo apt-get install gdebi
+wget https://hyper-updates.now.sh/download/linux_deb
+sudo gdebi linux_deb
+
+echo "installing Insomnia"
+echo "deb https://dl.bintray.com/getinsomnia/Insomnia /" \
+    | sudo tee -a /etc/apt/sources.list.d/insomnia.list
+wget --quiet -O - https://insomnia.rest/keys/debian-public.key.asc \
+    | sudo apt-key add -
+sudo apt-get install insomnia
+clear
+
+echo "commiting changes"
+source ~/.zshrc
+sudo dpkg --configure -a 
+sudo apt-get update --fix-missing
+sudo apt-get autoremove
+
+clear
+
+echo "finish installations"
