@@ -21,3 +21,7 @@ sh wakeup.sh
 - VsCode with Extensions
 - Spotify
 - Font Firacode
+- Curl
+- Chromium
+- Hyper
+- Insomnia
