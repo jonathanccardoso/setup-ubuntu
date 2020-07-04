@@ -1,12 +1,20 @@
 # :computer: Wake Up Ubuntu
 
-> My installation file to boot to an Ubuntu machine.
+<p align="center">
+  <img alt="Logo Ubuntu" width="300" src="https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png" />
+</p>
 
-<br />
+<blockquote align="center">
+This configs were made based on <a href="https://github.com/ErickWendel/ew-ubuntu-setup">Erick Wendel's setup</a> and my own needs as a JS developer.
+</blockquote>
 
-![Logo Ubuntu](https://assets.ubuntu.com/v1/8dd99b80-ubuntu-logo14.png)
+## Getting Started
 
-## Features 
+```
+sh wakeup.sh
+```
+
+## Features
 
 - Git using SSH
 - ZSH
